@@ -1,0 +1,3 @@
+A negative number is any number that is less than zero. For instance, -7 is a number that is seven less than 0.
+It might seem a little odd to say that a number is less than 0. After all, we often think of zero as meaning nothing. For instance, if you have 0 pieces of chocolate left in your candy bowl, you have no candy. There's nothing left. It's difficult to imagine having less than nothing in this case.
+However, there are instances in real life where you use numbers that are less than zero. For example, have you ever been outside on a really cold winter day when the temperature was below zero? Any temperature below zero is a negative number. For instance, the temperature on this thermometer is -20, or twenty degrees below zero.

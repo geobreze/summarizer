@@ -1,0 +1,28 @@
+version: "3.4"
+services:
+  api:
+    build:
+      context: api
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+    links:
+      - mongo
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    environment:
+      REACT_APP_API_IP: $API_IP
+  mongo:
+    image: mongo:bionic
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: texts

@@ -1,0 +1,9 @@
+nltk
+networkx
+matplotlib
+numpy
+werkzeug
+flask
+flask-cors
+gensim
+pymongo
