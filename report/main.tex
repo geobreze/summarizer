@@ -1,0 +1,37 @@
+\documentclass[a4paper,14pt]{extreport}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage{styles/bsumain}
+\usepackage[figure,table]{totalcount}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{graphics}
+\graphicspath{ {images/} }
+\usepackage{subcaption} 
+\usepackage{nameref}
+
+
+\usepackage{blindtext}
+
+\newcommand*{\jobtitle}[1]{\gdef\@jobtitle{#1}}
+\newcommand{\quotes}[1]{``#1''}
+
+\jobtitle{ТЕХНОЛОГИИ ИНТЕЛЛЕКТУАЛЬНОЙ ОБРАБОТКИ НЕСТРУКТУРИРОВАННОГО ТЕКСТА}
+
+\begin{document}
+
+\input{titlepage.tex}
+\setcounter{page}{2}
+\input{contents.tex}
+\input{introduction.tex}
+\input{problem.tex}
+\input{theory.tex}
+\input{development.tex}
+\input{applied.tex}
+\input{conclusions.tex}
+\input{literature.tex}
+\input{appendix.tex}
+
+\end{document}
