@@ -6,7 +6,6 @@ import tf_idf
 
 
 def process_file(filepath, keywords_n=3, sentences_n=2, training=False, encoding='utf-8'):
-    print("Processing file " + filepath)
     file = open(filepath, encoding=encoding)
     source = "".join(file.readlines())
     file.close()
@@ -42,7 +41,3 @@ def train():
     for file in os.listdir("txts"):
         f = os.path.join("txts", file)
         process_file(f, training=True, encoding='latin-1')
-
-
-if __name__ == "__main__":
-    train()
